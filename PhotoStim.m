@@ -77,6 +77,8 @@ while iTrial <= TaskParameters.GUI.NTrials
     ParameterMatrix(9,OutputChannels+1)={1./StimFreq*TaskParameters.GUI.NPulses};
     %stimulus train duration
     ParameterMatrix(11,OutputChannels+1)={1./StimFreq*TaskParameters.GUI.NPulses};
+    %single pulse duration
+    ParameterMatrix(5,OutputChannels+1)={TaskParameters.GUI.PulseDuration_ms/1000};
     
     ProgramPulsePal(ParameterMatrix);
     
